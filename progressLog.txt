@@ -1,0 +1,11 @@
+Day 0: 23/06/2023
+
+I have so far managed to set up the git repo for the project and I have also began to look at what
+python library would be best for analysing fit files. A quick chatGPT query identified fitparse
+to be a suitable library, one that breaks each part of data into a record that can then be broken
+down even further into more individual components.
+
+There have been a few discrepencies I have noticed thus far, such as some random timestamp values
+that are stored but are from an hour or so before the actual activity that is stored in the file.
+I will need to continue to find the most optimal way to parse this file and then set it up for 
+analysis, probably using pandas or numpy for efficiency.
