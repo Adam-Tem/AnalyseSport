@@ -1,4 +1,4 @@
-Day 0: 23/06/2023
+Progress Log #0: 23/06/2023
 
 I have so far managed to set up the git repo for the project and I have also began to look at what
 python library would be best for analysing fit files. A quick chatGPT query identified fitparse
@@ -9,3 +9,11 @@ There have been a few discrepencies I have noticed thus far, such as some random
 that are stored but are from an hour or so before the actual activity that is stored in the file.
 I will need to continue to find the most optimal way to parse this file and then set it up for 
 analysis, probably using pandas or numpy for efficiency.
+
+Progress Log #1: 26/06/23
+
+Watched a "Programming with Mosh" tutorial that was over an hour explaining how to set up a react app,
+and a few of the basics to go along with it. Will be helpful knowledge down the line hopefully!
+
+Managed to parse the .fit file a bit more again but not made a great deal of progress.
+
