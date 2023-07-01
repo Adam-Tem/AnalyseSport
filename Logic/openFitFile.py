@@ -1,7 +1,7 @@
 from fitparse import FitFile
 import numpy as np
 import datetime as dt
-import math
+from medianHR import medianHR
 
 def openFile(fileLocation):
     openedFile = FitFile(fileLocation)
@@ -9,10 +9,6 @@ def openFile(fileLocation):
     count = 0
     for record in openedFile.get_messages():
         dataVals = []
-        if count < 10:
-            print(record.header)
-            print(record.mesg_type)
-
         count += 1
         for field in record:
             if field.name == 'heart_rate':
@@ -30,7 +26,7 @@ def openFile(fileLocation):
 
     numpyData = np.array(overallData)
     openedFile.close()
-
+    medianHR(numpyData)
     return numpyData
 
 openFile("TestFiles/test1.fit")
