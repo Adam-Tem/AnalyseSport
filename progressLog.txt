@@ -17,3 +17,16 @@ and a few of the basics to go along with it. Will be helpful knowledge down the 
 
 Managed to parse the .fit file a bit more again but not made a great deal of progress.
 
+Progress Log #2: 01/07/23
+
+Been probably to long since I last spent a bit of time to look at this stuff, but I have now successfully
+made a start on the react app and managed to create a couple of dummy components to display when the app
+is set to run.
+
+I have also briefly had a look at what would be the best option for hosting some sort of backend service
+for the app, and I think I have decided on FastAPI as this is what was ultimately used in the team project
+last semester so it will be good to have some real code to look at for hints and guidance. Just for simple 
+python scripts to be run, but it could be good to have for down the line if I ever create a file upload
+system that then subsequently stores the files on an online database, but may be getting a bit ahead of myself
+with that one! Still a lot of learning to be done and I have to keep focussed even if it is just small
+steps at a time.
