@@ -1,12 +1,12 @@
 from fitparse import FitFile
 import numpy as np
 import datetime as dt
-from medianHR import medianHR
 
 def openFile(fileLocation):
     openedFile = FitFile(fileLocation)
     overallData = []
     count = 0
+
     for record in openedFile.get_messages():
         dataVals = []
         count += 1
@@ -26,7 +26,4 @@ def openFile(fileLocation):
 
     numpyData = np.array(overallData)
     openedFile.close()
-    medianHR(numpyData)
     return numpyData
-
-openFile("TestFiles/test1.fit")
