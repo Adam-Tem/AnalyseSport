@@ -1,8 +1,20 @@
-import AvgHR from "./HR/AvgHR"
-import MedainHR from "./HR/MedianHR"
+import AvgHR from "./components/AvgHR"
+import MedainHR from "./components/MedianHR"
+import FileUpload from "./components/FileUpload"
+import React, {useState, useEffect} from 'react'
+
 
 function App(){
-  return <div><AvgHR /> <MedainHR /></div>
+
+  
+const [currentFile, setCurrentFile] = useState("")
+const inputFile = useState("");
+  return <div>
+    <AvgHR /> 
+    <MedainHR />
+    <FileUpload />
+
+  </div>
 }
 
 export default App;

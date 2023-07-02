@@ -30,3 +30,17 @@ python scripts to be run, but it could be good to have for down the line if I ev
 system that then subsequently stores the files on an online database, but may be getting a bit ahead of myself
 with that one! Still a lot of learning to be done and I have to keep focussed even if it is just small
 steps at a time.
+
+----
+
+Another update later in the day! Managed to make some moves with the FastAPI setup and I can now use the 
+functions that I created earlier to parse an uploaded file on their docs page!
+
+
+Progress Log #3: 02/07/2023
+
+Am I actually getting anywhere? That is the question. Been watching more videos trying to work out how to
+upload a file through react to axios, and I feel like I'm close but still struggling to fully understand
+the concepts I am working with. The last blast of code that I used at the end was mostly produced by 
+good old chatGPT, and I am trying to read through it and understand more but there is definitely still
+a long way to go.
