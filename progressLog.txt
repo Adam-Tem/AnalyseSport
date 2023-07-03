@@ -44,3 +44,14 @@ upload a file through react to axios, and I feel like I'm close but still strugg
 the concepts I am working with. The last blast of code that I used at the end was mostly produced by 
 good old chatGPT, and I am trying to read through it and understand more but there is definitely still
 a long way to go.
+
+Progress Log #4: 03/07/2023
+
+The code... is working?! Once again doing more browsing than actually writing code or working out logic of
+stuff, but a last push once again from good old chatGPT to save the day at the end! So it is now set up 
+so that a file can be uploaded to the fastAPI backend and the appropriate values are returned, or at least
+logged on the console currently. I'm pretty sure it's still safe, dunno if CSRF attacks could happen or if it 
+could actually work without using the specific localhost setup but so far so good.
+
+Also watched some more videos trying to explain the concept of useState and useEffect, understand it a little
+more now also.

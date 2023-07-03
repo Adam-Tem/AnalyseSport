@@ -19,9 +19,11 @@ const FileUpload = () => {
     
         const formData = new FormData();
         formData.append('file', selectedFile);
+        console.log(selectedFile);
+        console.log(formData);
     
         try {
-          const response = await axios.post('http://127.0.0.1:8000/upload', formData);
+          const response = await axios.post('http://127.0.0.1:8000/upload/', formData);
           console.log(response.data); // Handle the response from the backend
         } catch (error) {
           console.error(error);
