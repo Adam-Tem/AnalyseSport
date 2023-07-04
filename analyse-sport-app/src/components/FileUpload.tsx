@@ -1,8 +1,13 @@
 import axios from "axios";
-import React, {useState,  ChangeEvent, FormEvent } from 'react';
+import React, {SetStateAction, useState,  ChangeEvent, FormEvent } from 'react';
 
-const FileUpload = () => {
+interface MyComponentProps {
+  updateHR: (data: SetStateAction<number>) => void;
+}
+
+const FileUpload : React.FC<MyComponentProps>= ({updateHR}) => {
     const [selectedFile, setSelectedFile] = useState<File | null>(null);
+    const [processedData, setProcessedData] = useState<JSON>();
   
     const handleFileChange = (event: ChangeEvent<HTMLInputElement>) => {
         if (event.target.files){
@@ -25,17 +30,22 @@ const FileUpload = () => {
         try {
           const response = await axios.post('http://127.0.0.1:8000/upload/', formData);
           console.log(response.data); // Handle the response from the backend
+          setProcessedData(response.data);
+          updateHR(response.data["average_hr"]);
         } catch (error) {
           console.error(error);
         }
       };
 
       return(
-    <form onSubmit={handleSubmit}>
+    <div><form onSubmit={handleSubmit}>
       <input type="file" onChange={handleFileChange}/>
       <button type="submit">Upload</button>
     </form>
-    )
+     </div>
+    );
+
+
 }
 
 export default FileUpload;

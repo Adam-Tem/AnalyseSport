@@ -55,3 +55,15 @@ could actually work without using the specific localhost setup but so far so goo
 
 Also watched some more videos trying to explain the concept of useState and useEffect, understand it a little
 more now also.
+
+Progress Log #5: 04/07/2023
+
+Holy moly, it's like running in the dark with a blindfold on and noise cancelling earphones...  BUT, we
+managed to get the average heart rate data to be returned from the file and it will now appear on screen
+when an appropriate file is uploaded! It's difficult thinking about the hierarchy and what should be nested
+in what but thank goodness we got there in the end with an okay amount of help from chatGPT but also just
+a good bit of messing around trying to make the pesky code work, while getting more understanding with each
+change. 
+
+Code is maybe in a bit of a mess at the moment but I feel that I am getting somewhere now that I can soon
+tidy it up and begin to do some nice formatting.

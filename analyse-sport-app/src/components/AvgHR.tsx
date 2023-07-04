@@ -1,4 +1,17 @@
+import { SetStateAction, useState } from "react";
+import FileUpload from "./FileUpload";
+
 function AvgHR(){
-    return <h1>150</h1>;
+   
+    function updateHR(data : SetStateAction<number>){
+        setAvgHR(data);
+
+    }
+
+    const [avgHR, setAvgHR] = useState(10);
+
+    return (<div>{avgHR}
+                <FileUpload updateHR = {updateHR}/>
+    </div>);
 }
 export default AvgHR;
