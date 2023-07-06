@@ -1,11 +1,14 @@
 import axios from "axios";
 import React, {SetStateAction, useState,  ChangeEvent, FormEvent } from 'react';
 
-interface MyComponentProps {
-  updateHR: (data: SetStateAction<number>) => void;
+interface StatsProps {
+  setAvgHR: React.Dispatch<SetStateAction<number>>;
+  setMedianHR: React.Dispatch<SetStateAction<number>>;
+  setElapsedTime:  React.Dispatch<SetStateAction<number>>;
+  setDistance: React.Dispatch<SetStateAction<number>>;
 }
 
-const FileUpload : React.FC<MyComponentProps>= ({updateHR}) => {
+const FileUpload  = ({setAvgHR, setMedianHR, setElapsedTime, setDistance} : StatsProps) => {
     const [selectedFile, setSelectedFile] = useState<File | null>(null);
     const [processedData, setProcessedData] = useState<JSON>();
   
@@ -31,7 +34,10 @@ const FileUpload : React.FC<MyComponentProps>= ({updateHR}) => {
           const response = await axios.post('http://127.0.0.1:8000/upload/', formData);
           console.log(response.data); // Handle the response from the backend
           setProcessedData(response.data);
-          updateHR(response.data["average_hr"]);
+          setAvgHR(response.data["average_hr"]);
+          setMedianHR(response.data["median_hr"]);
+          setElapsedTime(response.data["elapsed_time"]);
+          setDistance(response.data["distance"]);
         } catch (error) {
           console.error(error);
         }

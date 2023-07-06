@@ -1,7 +1,6 @@
 
-import AvgHR from "./components/AvgHR";
-import FileUpload from "./components/AvgHR"
-import React, {useState, useEffect} from 'react'
+import Stats from "./components/Stats";
+import React, {useState, } from 'react'
 
 
 function App(){
@@ -11,7 +10,7 @@ const [currentFile, setCurrentFile] = useState("")
 const inputFile = useState("");
   return <div>
    
-    <AvgHR />
+    <Stats />
 
   </div>
 }

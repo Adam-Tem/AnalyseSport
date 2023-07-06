@@ -67,3 +67,16 @@ change.
 
 Code is maybe in a bit of a mess at the moment but I feel that I am getting somewhere now that I can soon
 tidy it up and begin to do some nice formatting.
+
+Progress Log #6: 06/07/2023
+
+Only a couple modifications to the code as the Tour de France highlights may have been too interesting
+not to watch. Managed to get all the data values to display on the main app page after a file has been
+successfully uploaded, but I feel I have now come to realise that the structure may work best if I
+adjust it to be more like all other programming hierarchies and form more of a tree.
+
+So App at the top with all the variables declared, and then the stats all as separate components rather
+than the current way I have done it with Stats.tsx. Any updated variables from file upload can then be
+passed back upstream and then pushed down into the appropriate component. Will create diagrams for this
+soon.
+
