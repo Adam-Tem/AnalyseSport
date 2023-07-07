@@ -1,22 +1,19 @@
-import { SetStateAction, useState } from "react";
-import FileUpload from "./FileUpload";
+import "../Styles.css";
 
-function Stats(){
-   
-    function updateHR(data : SetStateAction<number>){
-        setAvgHR(data);
-    }
+interface StatsProps {
+    avgHR: Number;
+    medianHR: Number;
+    distance: Number;
+    elapsedTime: Number;
+  }
 
-    const [avgHR, setAvgHR] = useState(10);
-    const [medianHR, setMedianHR] = useState(10);
-    const [distance, setDistance] = useState(10);
-    const [elapsedTime, setElapsedTime] = useState(10);
-
-    return (<div>Avg HR: {avgHR} <br />
-                Median HR: {medianHR} <br />
-                Distance: {distance} <br />
-                Elapsed Time: {elapsedTime} <br />
-                <FileUpload setAvgHR = {setAvgHR} setMedianHR = {setMedianHR} setDistance = {setDistance} setElapsedTime = {setElapsedTime}/>
+function Stats({avgHR, medianHR, distance, elapsedTime} : StatsProps){
+    
+    return (<div id="stats_container">
+        <div id="stat_box"><h2>Average HR: {avgHR.valueOf()}</h2></div>
+        <div id="stat_box"><h2>Median HR: {medianHR.valueOf()}</h2></div>
+        <div id="stat_box"><h2>Distance: {distance.valueOf()}</h2></div>
+        <div id="stat_box"><h2>Elapsed Time: {elapsedTime.valueOf()}</h2></div>
     </div>);
 }
 export default Stats;

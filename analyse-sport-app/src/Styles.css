@@ -1,0 +1,58 @@
+#root{
+  height: 100%;
+  width: 100%;
+  margin:0;
+}
+
+body, html{
+  height: 100%;
+  margin: 0;
+}
+
+h2{
+  margin-top: 50px;
+}
+
+#page_title{
+  color: #34ff10;
+  margin: auto;
+  text-align: center;
+}
+
+#file_upload{
+  background-color: #00ffff;
+  width: 90%;
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#app_container{
+  height: 100%;
+  width: 100%;
+  background-color: #045991;
+}
+
+#stats_container{
+  width: 90%;
+  margin:auto;
+  margin-top: 10px;
+  height: 50%;
+  padding: 20px;
+  background-color: #00ffff;
+  border-radius: 35px;
+}
+#stat_box{
+  width: 40%;
+  height: 40%;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-bottom: 5%;
+  border-radius: 15px;
+  display: inline-block;
+  background-color: #0099ff;
+  text-align: center;
+
+}

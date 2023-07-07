@@ -80,3 +80,15 @@ than the current way I have done it with Stats.tsx. Any updated variables from f
 passed back upstream and then pushed down into the appropriate component. Will create diagrams for this
 soon.
 
+Prgoress Log #7: 07/07/2023
+
+Watched a few more videos explaining how to structure a react project, what mistakes are common with
+hooks and also what props actually are. I feel that I have currently got an okay structure, but with
+it being a small project it isn't too much of a worry but good to try and keep some sort of standard.
+
+I did make up a diagram for the app structure, but feel that the intermediate stats level is now
+unnecessary so have not included it.
+
+A few design steps have also been taken, adding some basic css to the page to try and get it looking
+better. Although, like always with css it just has a sort of clunky look to it; I don't want to use
+bootstrap so will try and learn some more proper css to make it look better.

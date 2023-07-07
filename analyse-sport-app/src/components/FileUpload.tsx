@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, {SetStateAction, useState,  ChangeEvent, FormEvent } from 'react';
+import "../Styles.css";
 
 interface StatsProps {
   setAvgHR: React.Dispatch<SetStateAction<number>>;
@@ -44,7 +45,7 @@ const FileUpload  = ({setAvgHR, setMedianHR, setElapsedTime, setDistance} : Stat
       };
 
       return(
-    <div><form onSubmit={handleSubmit}>
+    <div id="file_upload"><form onSubmit={handleSubmit}>
       <input type="file" onChange={handleFileChange}/>
       <button type="submit">Upload</button>
     </form>
