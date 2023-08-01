@@ -6,10 +6,10 @@ import "./Styles.css";
 
 function App(){
 
-  const [avgHR, setAvgHR] = useState(10);
-  const [medianHR, setMedianHR] = useState(10);
-  const [distance, setDistance] = useState(10);
-  const [elapsedTime, setElapsedTime] = useState(10);
+  const [avgHR, setAvgHR] = useState(0);
+  const [medianHR, setMedianHR] = useState(0);
+  const [distance, setDistance] = useState("");
+  const [elapsedTime, setElapsedTime] = useState("");
   
   return <div id="app_container">
     <h1 id="page_title">Heart Rate Analysis!</h1>

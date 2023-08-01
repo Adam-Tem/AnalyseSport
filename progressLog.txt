@@ -92,3 +92,28 @@ unnecessary so have not included it.
 A few design steps have also been taken, adding some basic css to the page to try and get it looking
 better. Although, like always with css it just has a sort of clunky look to it; I don't want to use
 bootstrap so will try and learn some more proper css to make it look better.
+
+Progress Log #8: 01/08/2023
+
+Well, this was poor from me... Literally not done anything coding related in over 3 weeks. I wouldn't
+say the time was wasted completely, have been doing massive amounts of training and a decent amount of
+overtime at work, but motivation to code and go further with this project really just fell apart.
+
+I am happy with the work that I put into this, I feel that it has really helped me understand the core
+concepts and principles of React web development and also what the main differences are between typescript
+and javascript. Planning out the hierarchy of the project was also good to work on and I now understand 
+that it would definitely be easier to have as much of this framework thought out before writing too much
+code just to avoid any file movement errors down the line in a project. Of course, I wouldn't go as far to
+say that a Waterfall model approach should be used as I do see a benefit in keeping some flexibility but 
+more planning would be good in the future.
+
+In this commit I have managed to add in more error handling feautres such as only allowing the upload of
+.fit files and raising a notification to the user if they have not selected an appropriate file. The 
+returned format of the elapsed time and distance have also bee modified to be formatted in a nicer way.
+
+The project itself was fun and I feel that the learnings from this will be useful at some point in the
+future. Again, there could be many other improvements I could make to this but I am happy with the
+result of this and feel that to try and keep motivation for coding going I am best to start a new 
+project.
+
+PROJECT END
